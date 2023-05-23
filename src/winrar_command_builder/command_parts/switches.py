@@ -1,4 +1,6 @@
 from typing import Any, Literal
+from ..typedefs import PathType
+import os
 
 
 class Switch:
@@ -57,18 +59,18 @@ RECURSE_SUBFOLDERS = Switch('-r')
 ARCHIVE_TIME_AS_NEWEST_FILE = Switch('-tl')
 
 # specify SFX icon
-def ICON(path:str):
-    return Switch(f'-iicon{path}')
+def ICON(path:PathType):
+    return Switch(f'-iicon{os.fspath(path)}')
 
 # create self-extracting (SFX) archive
-def SELF_EXTRACTING(sfx_module_path:str=''):
-    return Switch(f'-sfx{sfx_module_path}')
+def SELF_EXTRACTING(sfx_module_path:PathType=''):
+    return Switch(f'-sfx{os.fspath(sfx_module_path)}')
 
 # read archive comment from file
 # the comment can be relevant for e.g. SFX archive
 # it can be copied from the GUI "comment" field
-def COMMENT(file:str):
-    return Switch(f'-z{file}')
+def COMMENT(file:PathType):
+    return Switch(f'-z{os.fspath(file)}')
 
 # request administrative access for SFX archive
 REQUIRE_ADMIN = Switch('-iadm')

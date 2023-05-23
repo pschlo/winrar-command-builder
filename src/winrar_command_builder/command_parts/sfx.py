@@ -17,8 +17,8 @@ class SfxCommand:
 
 
 
-def EXECUTE_FILE(exe_path:str):
-    return SfxCommand(f'Setup={exe_path}')
+def SETUP(program:str):
+    return SfxCommand(f'Setup={program}')
 
 TEMP_MODE = SfxCommand('TempMode')
 
