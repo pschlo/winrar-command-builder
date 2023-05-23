@@ -1,2 +1,2 @@
 # winrar-command-builder
-Constructs a WinRAR CLI command
+Facilitates the construction of WinRAR CLI command
