@@ -9,13 +9,13 @@ Assume you have a project called `My App` and a project directory that looks lik
 
 ```
 my-app/
-	README.md
-	src/
-	dist/
-		lib/
-		...
-		launch-app.exe
-    build-exe.py
+   README.md
+   src/
+   dist/
+      lib/
+      ...
+      launch-app.exe
+   build-exe.py
 ```
 
 The source codes resides in `src` and is compiled to `dist`. You now want to bundle `dist` in a single `.exe` file. For this, you have created a `build-exe.py` script like this:
