@@ -53,6 +53,6 @@ dest = project_path / 'my-app.exe'
 
 The default SFX template `create_exe` creates executables that:
 
-* extract the archive to a temporary directory (usually in `%tmp%`) without asking for confirmation
-* run the program and wait for it to finish
-* delete the temporary directory
+* **extract** the archive to a temporary directory (usually in `%tmp%`) without asking for confirmation, but with visual feedback
+* **run** the program and wait for it to finish
+* **delete** the temporary directory
