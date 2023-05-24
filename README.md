@@ -1,7 +1,7 @@
 # winrar-command-builder
 [WinRAR](https://www.win-rar.com) is a file archiver utility for Windows. Its main purpose is to create, view and unpack `zip` and `rar` archives.
 
-Additionally, WinRAR can be used to create [self-extracting archives](https://en.wikipedia.org/wiki/Self-extracting_archive) (SFX). SFX are executable files that contain an archive which they decompress upon execution. They can also be configured to run a program from the extracted archive after decompression. This is very handy for creating easily distributable, standalone Windows applications. SFX can be created from both the WinRAR GUI and the command line. The commands are, however, quite obscure and difficult to remember.
+Additionally, WinRAR can be used to create [self-extracting archives](https://en.wikipedia.org/wiki/Self-extracting_archive) (SFX). SFX are executable files that contain an archive which they decompress upon execution. They can also be configured to then run a program from the extracted archive. This is very handy for creating easily distributable, standalone Windows applications. SFX can be created from both the WinRAR GUI and the command line. The commands are, however, quite obscure and difficult to remember.
 
 This project provides a simple interface for constructing complex WinRAR commands. It also contains ready-to-use template functions for creating SFX archives.
 
